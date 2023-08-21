@@ -1,0 +1,33 @@
+flowchart TD
+    subgraph User Programs
+    DE[Desktop Environment]
+    SH[Shell]
+    UPS[User Programs & Scripts]
+    GNU_SU[GNU System Utilities]
+    DE --> GNU_SU
+    SH --> GNU_SU
+    UPS --> GNU_SU
+    end
+    subgraph Kernel
+    direction TB
+    SCI[System Call Interface]
+    DF[Directories & Files]
+    Proc[Processes]
+    MEM[Memory]
+    NET[Networks]
+    end
+    subgraph Hardware
+    DT[Disks & Tapes]
+    PKS[Peripherals:Printers Keyboards Screens ]
+    CPU
+    RAM
+    ND[Network Devices]
+    end
+DE --> SCI
+GNU_SU --> SCI
+%% Kernel Down
+  DF --> DT
+  Proc --> CPU
+  MEM --> RAM
+  NET --> ND
+  SCI --> PKS
