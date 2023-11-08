@@ -20,3 +20,11 @@ Vagrant 2.4.0
 ```sh
 ~$ vagrant up
 ```
+
+## Verify the VM
+
+```sh
+~$ vagrant ssh
+```
+
+This will provide a shell in the virtual machine via ssh.
