@@ -27,4 +27,4 @@ Vagrant 2.4.0
 ~$ vagrant ssh
 ```
 
-This will provide a shell in the virtual machine via ssh.
+This will provide a shell in the virtual machine via ssh. The default username and password is `vagrant`.
