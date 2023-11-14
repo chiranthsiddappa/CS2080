@@ -49,5 +49,5 @@ The name of the vagrant box will be the first name in the file called `Host`, us
 The following will expose the port 80 from inside the vm to a port 8080 as localhost.
 
 ```sh
-ssh -F ssh_config -L 80:localhost:8080 default
+ssh -F ssh_config -L 8080:localhost:80 default
 ```
