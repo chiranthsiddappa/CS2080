@@ -50,4 +50,6 @@ The following will expose the port 80 from inside the vm to a port 8080 as local
 
 ```sh
 ssh -F ssh_config -L 8080:localhost:80 default
+# OR cat ssh_config to find the port
+ssh -L 8080:localhost:80 -p ${port} vagrant@localhost
 ```
